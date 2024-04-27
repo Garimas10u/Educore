@@ -1,0 +1,68 @@
+.programs{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.program img{
+    width: 100%;
+    box-shadow: #32325d40 0px 13px 27px -5px, rgba(0, 0, 0, 0.8) 0px 8px 16px -8px;
+    height: 40vh;
+    border-radius: 10px;
+    display: block;
+}
+.program{
+    flex-basis: 31%; 
+    position: relative;  
+}
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;flex-direction: column;
+    color: rgb(250, 248, 248);
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    background: rgba(16, 5, 56, 0.831);
+    padding-top: 60%;
+    transition: 0.4s;
+}
+.caption img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+}
+.program:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
+
+@media(max-width: 600px){
+    .programs{
+        flex-direction: column;
+    }
+    .program{
+        flex-basis: 100%;
+        margin: 20px;
+
+    }
+    #scholar-4{
+        width: 100%;
+    }
+
+    
+
+
+       
+
+
+}
